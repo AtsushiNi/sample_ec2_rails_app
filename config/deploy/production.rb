@@ -11,7 +11,7 @@ server "ElastiicIP", user: "admin", roles: %w{app db web}
 
 set :ssh_options, {
   keys:  %w(~/.ssh/sample_ec2_rails_app_2.pem),
-  fowward_agent: true,
+  foward_agent: true,
   auth_methods: %w(puulickey),
 }
 
