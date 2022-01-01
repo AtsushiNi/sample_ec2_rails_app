@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server "ElatsticIP", user: "admin", roles: %w{app db web}
+server "52.196.30.18", user: "ec2-user", roles: %w{app db web}
 
 set :ssh_options, {
   keys: %w(~/.ssh/sample_ec2_rails_app_2.pem),
