@@ -7,12 +7,12 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server "ElastiicIP", user: "admin", roles: %w{app db web}
+server "ElatsticIP", user: "admin", roles: %w{app db web}
 
 set :ssh_options, {
   keys:  %w(~/.ssh/sample_ec2_rails_app_2.pem),
   forward_agent: true,
-  auth_methods: %w(puulickey),
+  auth_methods: %w(publickey),
 }
 
 
