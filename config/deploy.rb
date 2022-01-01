@@ -7,7 +7,7 @@ set :rbenv_ruby, File.read('.ruby-version').strip
 set :branch, ENV['BRANCH'] || "master"
 
 set :nginx_config_name, "#{fetch(:application)}.conf"
-set :ngiinx_sites_enabled_path, "/etc/nginx/conf.d"
+set :nginx_sites_enabled_path, "/etc/nginx/conf.d"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

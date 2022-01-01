@@ -10,7 +10,7 @@
 server "ElatsticIP", user: "admin", roles: %w{app db web}
 
 set :ssh_options, {
-  keys:  %w(~/.ssh/sample_ec2_rails_app_2.pem),
+  keys: %w(~/.ssh/sample_ec2_rails_app_2.pem),
   forward_agent: true,
   auth_methods: %w(publickey),
 }
