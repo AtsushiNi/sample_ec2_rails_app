@@ -3,7 +3,7 @@ lock "~> 3.16.0"
 
 set :application, "sample_ec2_rails_app"
 set :repo_url, "git@github.com:AtsushiNi/sample_ec2_rails_app.git"
-set :rbenv_ruby, File.read('.ruby_version').strip
+set :rbenv_ruby, File.read('.ruby-version').strip
 set :branch, ENV['BRANCH'] || "master"
 
 set :nginx_config_name, "#{fetch(:application)}.conf"
